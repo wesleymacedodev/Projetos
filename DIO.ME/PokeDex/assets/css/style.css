@@ -1,0 +1,129 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 2rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content .title { 
+    margin: 0;
+}
+
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: .7rem .9rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgb(116, 116, 116);
+    /* height: 100px; */
+}
+
+
+.pokemon .pokemon_number {
+    text-align: right;
+    font-size: .8rem;
+}
+
+.pokemon .pokemon_name {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.pokemon .pokemon_detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .pokemon_detail .pokemon_types {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon .pokemon_detail .pokemon_types .pokemon_type {
+    text-align: center;
+    padding: .25rem .5rem;
+    border-radius: .5rem;
+    margin: .3rem 0;
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+
+.pokemon .pokemon_detail .pokemon_img {
+    max-width: 100%;
+    height: 70px;
+    /* align-self: flex-end; deixa a imagem a direita */
+
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    color: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(115, 29, 212);
+    padding: 0.3rem 0.6rem;
+}
+
+
+
+@media screen and (max-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .content {
+        max-width: 440px;
+        margin: 0 auto;
+    }
+    .pokemons {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .content {
+        max-width: 576px;
+        margin: 0 auto;
+    }
+    .pokemons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    .pokemons {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
