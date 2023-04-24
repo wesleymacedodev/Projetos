@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relogio</title>
+    <link rel="stylesheet" href="./src/css/global.css">
+</head>
+<body>
+    <section class="main">
+        <div class="clock">
+            <div class="submenu">
+                <div class="options" id="options">
+                    Options
+                </div>
+            </div>
+            <div class="config" id="config">
+                <div class="header">
+                    <h2 class="title">Config</h2>
+                    <a class="exit" id="exit-config">X</a>
+                </div>
+                <div class="tab">
+                    <span class="item">Theme</span>
+                    <select name="Theme" class="select" id="theme">
+                        <option value="default" selected>Default</option>
+                        <option value="dracula">Dracula</option>
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
+                    </select>
+                </div>
+                <div class="tab">
+                    <span class="item">Font</span>
+                    <select name="Theme" class="select" id="font">
+                        <option value="default" selected>Default</option>
+                        <option value="brunoace">Bruno Ace</option>
+                        <option value="abel">Abel</option>
+                        <option value="roboto">Robot</option>
+                    </select>
+                </div>
+                <div class="tab">
+                    <span class="item">Format</span>
+                    <select name="format" class="select" id="format">
+                        <option value="default" selected>Default</option>
+                        <option value="HMS">H:M:S</option>
+                        <option value="HM">H:M</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clock-time">
+                <span id="hours" class="digits">00</span>
+                <span class="separator">:</span>
+                <span id="minutes" class="digits">00</span>
+                <span class="separator">:</span>
+                <span id="seconds" class="digits">00</span>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+    <script type="text/javascript" src="./src/js/options/theme.js"></script>
+    <script type="text/javascript" src="./src/js/options/format.js"></script>
+    <script type="text/javascript" src="./src/js/options/font.js"></script>
+</body>
+
+</html>

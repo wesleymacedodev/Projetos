@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:content-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --color-primary: #282a36; 
+    --color-secondary: #44475a;
+    --color-font: wheat;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    width: 100vw;
+    height: 100vh;
+}
+
+.clock {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.clock-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    padding: 6vw 8vw;
+    border-radius: 10px;
+
+}
+
+.clock-time:has(.digits,.separator) {
+    color: var(--color-font);
+    font-size: 14vw;
+}
+
+.submenu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.options {
+    background-color: var(--color-secondary);
+    padding: 1vw;
+    font-size: 1.5vw;
+    align-self: flex-end;
+    margin-right: 2vw;
+    color: var(--color-font);
+    border-radius: 10px 10px 0px 0px;
+    filter: brightness(80%);
+    transition: filter 1s;
+}
+
+.options:hover {
+    cursor: pointer;
+    filter: brightness(95%);
+}
+
+.config {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--color-secondary);
+    top: 12%;
+    border-radius: 10px;
+    width: 100%;
+    height: 88%;
+}
+
+.config .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.config .title {
+    color: var(--color-font);
+    font-size: 2vw;
+}
+
+.config .exit {
+    text-decoration: none;
+    color: var(--color-font);
+    align-self: flex-end;
+    font-size: 2vw;
+    transition: color 1s;
+}
+
+.config .exit:hover {
+    color: rgb(255, 56, 56);
+}
+
+.config .exit:hover {
+    cursor: pointer;
+}
+
+.config .tab {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-font);
+    margin: 1vw;
+}
+
+.config .tab .item {
+    font-size: 1.3vw;
+}
+
+.config .select {
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-font);
+    padding: 2px;
+    font-size: 1vw;
+    border-radius: 5px;
+}
+
+.config .select:hover {
+    cursor: pointer;
+}
