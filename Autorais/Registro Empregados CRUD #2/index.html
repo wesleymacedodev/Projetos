@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento dos salarios</title>
+    <!-- Icones - https://icons.getbootstrap.com/  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+</head>
+<body>
+    <div id="confirmation" class="confirmation">
+        <div class="choice">
+        <span>Deseja limpar ?</span>
+        <button id="confirmation-accept">Aceitar</button>
+        <button id="confirmation-decline">Negar</button>
+    </div>
+    </div>
+    <div class="register-element">
+        <div class="register-submit">
+        <form class="form">
+        <label for="name">Nome</label>
+        <input id="name" type="text" required autocomplete="off">
+        <label for="service">Serviço</label>
+        <input id="service" type="text" required autocomplete="off">
+        <label for="salary">Salário</label>
+        <input id="salary" type="number" required autocomplete="off">
+        <button id="btnSubmit" type="submit">Salvar</button>
+    </form>
+    </div>
+    </div>
+    <section class="register-section">
+        <div class="register">
+        <div class="register-header">
+            <div class="register-title">
+            <h1>Registro de Empregados</h1>
+            </div>
+            <div class="register-actions">
+            <button onclick="register()" id="add-value" class="btn-action">Adicionar</button>
+            <button onclick="clearItens()" id="clear-value" class="btn-action">Limpar</button>
+        </div>
+    </div>
+        <div class="register-box">
+            <table class="register-table">
+                <thead>
+                <tr>
+                    <th>Funcionário</td>
+                    <th>Serviço</td>
+                    <th>Salário</td>
+                    <th>Editar</td>
+                    <th>Remover</td>
+                </tr>
+                </thead>
+                <tbody id="table-itens">
+                    <tr>
+                        <!-- Elementos Da Tabela -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </section>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root{
+    --main-section-color: #44475a;
+    --body-color: #282a36;
+    --button-color: #575b70;
+    --font-color: #e2d0ad;
+    --table-color: #4f5268;
+    --table-secondary-color: #3b3d4d;
+    --table-header-color: #414355;
+    --register-submit: #373847;
+    --confirmation-color: #1d1d27;
+    --edit-color: #82af82;
+    --delete-color: #ad6d6d;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+/* Elementos principais */
+.register-section {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 3vw;
+    background-color: var(--main-section-color);
+    border-radius: 10px;
+}
+
+.register-title {
+    color: var(--font-color);
+}
+
+.register-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.register-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-action {
+    background-color: var(--button-color);
+    border: var(--font-color) solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--font-color);
+    margin: 5px;
+    transition: filter 1s 0s ease;
+}
+
+.btn-action:hover {
+    filter: brightness(80%);
+}
+
+.register-box {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+/* Tabela */
+.register-table {
+    width: 100%;
+    text-align: left;
+    background-color: var(--table-color);
+    color: var(--font-color);
+    border-spacing: 0;
+}
+
+.register-table tr:nth-child(even) {
+    background-color: var(--table-secondary-color);
+}
+
+.register-table thead tr {
+    position: sticky;
+    background-color: var(--table-header-color);
+    top: 0;
+    z-index: 1;
+}
+
+/* Formulario de inserção */
+
+.register-element{
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.register-submit .form {
+    display: flex;
+    width: 25vw;
+    min-width: 200px;
+    flex-direction: column;
+    background-color: var(--register-submit);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form input {
+    color: var(--font-color);
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form label {
+    color: var(--font-color);
+    font-size: 1rem;
+}
+
+.form button {
+    background-color: transparent;
+    color: var(--font-color);
+    padding: 5px 10px;
+    border: solid 1px var(--font-color);
+    font-size: 1rem;
+}
+
+/* Botão de confirmação */
+.confirmation {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; 
+}
+
+.confirmation .choice {
+    min-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--confirmation-color);
+    color: var(--font-color);
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.confirmation .choice button {
+    background-color: var(--button-color);
+    color: var(--font-color);
+    border: none;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+/* Classe para ativar os elementos com display: none;*/
+.active {
+    display: flex;
+}
+
+/* Botões para editar */
+#edit, #delete {
+    cursor: pointer;
+    transition: color 1s ease 0s;
+}
+
+#edit:hover {
+    color: var(--edit-color);
+}
+
+#delete:hover {
+    color: var(--delete-color); 
+}
