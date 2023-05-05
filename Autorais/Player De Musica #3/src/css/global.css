@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #44475a;
+    --music-player-box-color: #282a36;
+    --font-primary-color: #e2d0ad;
+    --font-secondary-color: #9c927f;
+    --controls-primary-button: #e2d0ad;
+    --controls-primary-font: #202020;
+    --controls-secondary-button: #575b70;
+    --controls-secondary-font: #ffffff;
+}
+
+.music-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.music-player-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--music-player-box-color);
+    padding: 20px;
+    border-radius: 2%;
+}
+
+.music-player-box .img img{
+    width: 256px;
+    height: 256px;
+}
+
+
+/* Barra de informações */
+.music-player-box .info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--font-color);
+}
+
+.music-player-box .info .music {
+    color: var(--font-primary-color);
+}
+
+.music-player-box .info .artist {
+    color: var(--font-secondary-color);
+}
+
+/* Tempo decorrido e a barra do tempo */
+.music-player-box .time-bar {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.music-player-box .time-bar .bar {
+    width: 100%;
+}
+
+.music-player-box .time-bar .time {
+    display: flex;
+    justify-content: space-between;
+    color: var(--font-secondary-color);
+}
+
+/* Controles da musica */
+
+.music-player-box .controls {
+    
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    font-size: 2rem;
+    color: var(--font-color)
+}
+
+.music-player-box .controls .play-stop {
+    background-color: var(--controls-primary-button);
+    color: var(--controls-primary-font);
+    padding: 10px;
+    border-radius: 100%;
+    transition: transform 1s;
+}
+
+.music-player-box .controls .play-stop:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+
+.music-player-box .controls :is(.previous, .next) {
+    background-color: var(--controls-secondary-button);
+    color: var(--controls-secondary-font);
+    padding: 6px;
+    border-radius: 100%;
+    transition: transform 1s;
+}
+
+.music-player-box .controls :is(.previous, .next):hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+
+
+/* Barra de volume */
+.music-player-box .volume {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-secondary-color);
+}
+
+.music-player-box .volume :is(.min, .max){
+    cursor: pointer;
+}
+
