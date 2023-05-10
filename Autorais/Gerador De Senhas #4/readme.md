@@ -12,7 +12,7 @@ A proposta do projeto era construir um Gerador De Senhas simples apenas utilizan
 <h4>- Resultado Do Projeto</h4>
 <img style="width: 800px;" src="https://github.com/wesleymacedodev/Projetos/assets/123600728/20c1a9aa-4a85-4c22-b3ee-677c09cb7916"/>
 
-Preview do Projeto [ [Visualize o site] ](https://wesleymacedodev.github.io/Projetos/Autorais/Gerador%20De%20Senhas%20%234/index.html)
+Preview do Projeto [ [Visualize o site] ](https://wesleymacedodev.github.io/Projetos/Autorais/Gerador%20De%20Senhas%20%234/)
   
 <h4>- Considerações</h4>
 <h5>Gostei da elaboração do projeto, aprendi como utilizar a tag audio e manipulá-la.</h5>
