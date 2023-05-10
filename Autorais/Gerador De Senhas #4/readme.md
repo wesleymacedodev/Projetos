@@ -15,4 +15,4 @@ A proposta do projeto era construir um Gerador De Senhas simples apenas utilizan
 Preview do Projeto [ [Visualize o site] ](https://wesleymacedodev.github.io/Projetos/Autorais/Gerador%20De%20Senhas%20%234/)
   
 <h4>- Considerações</h4>
-<h5>Gostei da elaboração do projeto, aprendi como utilizar a tag audio e manipulá-la.</h5>
+<h5>Esse projeto foi divertido, aprendi a utilizar CharCode e Math.Random().</h5>
