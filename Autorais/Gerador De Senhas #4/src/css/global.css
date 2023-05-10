@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #44475a;
+    --container-color: #282a36;
+    --display-color: #575b70;
+    --font-color: #e2d0ad;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+.password-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--container-color);
+    color: var(--font-color);
+    min-width: 300px;
+    padding: 10px;
+}
+
+.password-generator .title {
+    font-size: 1rem;
+}
+
+.password-generator .display {
+    width: 100%;
+    padding: 0.5vw;
+    text-align: center;
+    background-color: #575b70;
+}
+
+.password-generator .size {
+    display: flex;
+    width: 100%;
+}
+
+.password-generator .size input {
+    width: 90%;
+}
+
+.password-generator .size input:hover {
+    cursor: grabbing;
+}
+
+
+.options {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.password-generator .generate {
+    width: 100%;
+}
+
+.password-generator .generate button{
+    width: 100%;
+    background-color: transparent;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    padding: 5px;
+}
+
+.password-generator .generate button:hover {
+    cursor: pointer;
+}

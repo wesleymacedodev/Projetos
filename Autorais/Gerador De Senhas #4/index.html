@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/global.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="password-generator">
+            <div class="title">
+                <h1>Gerador de senha</h1>
+            </div>
+            <div class="display">...</div>
+            <div class="size">
+                <input type="range" name="size" min="1" step="1" max="32" value="12">
+                <label for="size">12</label>
+            </div>
+            <div class="options">
+                <div class="option-element">
+                    <label for="uppercase">Uppercase</label>
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                </div>
+                <div class="option-element">
+                    <label for="lowercase">Lowercase</label>
+                    <input type="checkbox" name="lowercase" id="lowercase">
+                </div>
+                <div class="option-element">
+                    <label for="number">Number</label>
+                    <input type="checkbox" name="number" id="number">
+                </div>
+                <div class="option-element">
+                    <label for="symbol">Symbol</label>
+                    <input type="checkbox" name="symbol" id="symbol">
+                </div>
+            </div>
+            <div class="generate">
+                <button type="submit" id="generate">Generate</button>
+            </div>
+
+        </div>
+    </section>
+    <script type="text/javascript" src="./src/js/main.js"></script>
+</body>
+
+</html>
