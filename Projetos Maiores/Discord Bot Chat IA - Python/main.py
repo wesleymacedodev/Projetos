@@ -23,7 +23,7 @@ async def on_message(message):
 
     await bot.process_commands(message)
 
-for comandos in os.listdir("./discord_bot/comandos"):
+for comandos in os.listdir("./comandos"):
     if comandos.endswith(".py"):
         bot.load_extension(f"comandos.{comandos[:-3]}")
 
