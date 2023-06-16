@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 Desenvolvido (Caso haja erro)
 ```bash
-pip install discord.py==2.2.3
+pip install discord.py==1.7.3
 pip install openai==0.27.7
 ```
 
