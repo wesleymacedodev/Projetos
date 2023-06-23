@@ -1,0 +1,36 @@
+.community { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    gap: 5px;
+    background: rgb(65,4,93);
+    background: linear-gradient(0deg, rgba(65,4,93,1) 0%, rgba(64,18,86,1) 100%);
+    padding: 10px;
+}
+
+.title {
+    font-size: 1.1rem;
+    color: var(--default-text-color);
+}
+
+.description {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--default-text-color);
+}
+
+.button:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}

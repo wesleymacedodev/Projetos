@@ -1,0 +1,39 @@
+.about_elements {
+    display: flex;
+    align-items: center;
+
+}
+
+.title {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    max-width: 300px;
+}
+
+.image {
+    max-width: 250px;
+}
+
+.content {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 720px) {
+    .image {
+        width: 100%;
+        max-width: 300px;
+    }
+    .about_elements {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .content {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,32 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px;
+    padding: 30px 0;
+    width: 100%;
+    background: rgb(65,4,93);
+    background: linear-gradient(0deg, rgba(65,4,93,1) 0%, rgba(48,14,65,1) 100%);
+    gap: 10px;
+}
+
+.title {
+    color: var(--default-text-color);
+    font-size: 1.5rem;
+}
+
+.email {
+    padding: 10px;
+    border: none;
+}
+.submit {
+    padding: 10px;
+    border: none;
+    color: var(--default-text-color);
+    background-color: var(--text-color);
+}
+
+.submit:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}

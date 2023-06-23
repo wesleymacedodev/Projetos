@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.plans_section {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    width: 100%;
+    max-width: 300px;
+
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1280px) {
+    .plans{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .plans{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .plans{
+        grid-template-columns: 1fr;
+    }
+}
+
