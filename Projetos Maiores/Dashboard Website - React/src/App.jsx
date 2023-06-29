@@ -1,5 +1,5 @@
 import Home from './sections/home/Home'
-import Copyright from '../copyright'
+import Copyright from '../Copyright'
 
 function App() {
   return (
