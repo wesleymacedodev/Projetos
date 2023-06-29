@@ -1,0 +1,13 @@
+.model {
+    width: 100%;
+    background-color: var(--secondary-background);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.title {
+    font-size: var(--subtitle-size);
+    color: var(--font-color);
+    margin-bottom: 1rem;
+}
+

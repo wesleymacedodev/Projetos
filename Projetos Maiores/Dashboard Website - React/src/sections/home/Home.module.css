@@ -1,0 +1,22 @@
+.home {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--main-background);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1080px;
+    padding: 5px;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--font-color)
+}
+

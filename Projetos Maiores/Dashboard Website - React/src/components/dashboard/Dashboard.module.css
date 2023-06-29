@@ -1,0 +1,22 @@
+.dashboards {
+    display: grid;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 10px;
+}
+
+.title {
+    color: var(--font-color);
+    font-size: var(--title-size);
+    padding: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    .dashboards {
+        display: flex;
+    }
+}
+
