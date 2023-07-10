@@ -25,7 +25,7 @@ Bibliotecas (Python3.10 - Windows)
 ### Demonstração
 
 Funcionamento
-<iframe src="https://streamable.com/e/4n24rr?autoplay=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe>
+<iframe src="https://streamable.com/e/4n24rr?autoplay=1" width="560" height="420" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 
 Console
 ![video](./github/console.gif)
