@@ -24,8 +24,17 @@ Bibliotecas (Python3.10 - Windows)
 
 ### Demonstração
 
-Funcionamento
-![video](https://streamable.com/4n24rr)(https://streamable.com/4n24rr)
+<details>
+<summary>Funcionamento</summary>
 
-Console
+https://streamable.com/4n24rr
+
+</details>
+
+<details>
+<summary>Console</summary>
+
 ![video](./github/console.gif)
+
+</details>
+
