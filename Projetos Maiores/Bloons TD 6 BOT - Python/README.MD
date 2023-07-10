@@ -25,7 +25,7 @@ Bibliotecas (Python3.10 - Windows)
 ### Demonstração
 
 Funcionamento
-![video](./github/bloonstd6bot.mp4)
+<div style="width:100%;height:0px;position:relative;padding-bottom:75.000%;"><iframe src="https://streamable.com/e/4n24rr?autoplay=1" frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 
 Console
 ![video](./github/console.gif)
