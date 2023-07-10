@@ -24,8 +24,8 @@ Bibliotecas (Python3.10 - Windows)
 
 ### Demonstração
 
-#####Funcionamento
-<video src='./github/bloonstd6bot.mp4' width=180/>
+Funcionamento
+![video](./github/bloonstd6bot.mp4)
 
-#####Console
+Console
 ![video](./github/console.gif)
