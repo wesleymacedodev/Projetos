@@ -1,0 +1,15 @@
+{
+  "monkey_bind": {
+    "sniper": "z",
+    "alchemist": "f",
+    "village": "k",
+    "sub": "x",
+    "ninja": "d",
+    "wizard": "a",
+    "bombshooter": "e",
+    "upgrade_1": ",",
+    "upgrade_2": ".",
+    "upgrade_3": ";",
+    "playfast": "space"
+  }
+}
