@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "electron": "^25.3.0"
+  },
+  "name": "gamelauncher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

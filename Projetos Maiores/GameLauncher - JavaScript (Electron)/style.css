@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./src/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+:root {
+    --main-color: #000c20;
+    --secondary-color: #0A1128;
+    --tertiary-color: #034078;
+    --card-color: #04305a;
+    --font-color: #d4d2b1;
+    --attention-color: #ff4747;
+}
+
+body, html {
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .title {
+    font-size: 30px;
+    color: var(--font-color);
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+.header .actions {
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+.header .button {
+    background-color: var(--tertiary-color);
+    border: none;
+    padding: 10px;
+    color: var(--font-color);
+}
+
+.header .button:hover {
+    cursor: pointer;
+}
+
+.game_list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    justify-content: flex-start;
+    overflow: auto;
+    max-height: 80vh;
+}
+
+.game_list .game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--card-color);
+
+}
+
+.game_list .game .title {
+    font-size: 20px;
+    text-align: start;
+    width: 100%;
+    margin: 10px;
+    color: var(--font-color);
+}
+
+.game_list .game .icon {
+    height: 172px;
+}
+
+.game_list .game .play {
+    width: 100%;
+    background-color: var(--tertiary-color);
+    color: var(--font-color);
+    border: none;
+    padding: 5px;
+}
+
+.game_list .game .play:hover {
+    cursor: pointer;
+}
+
+.game_list .game .update {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.game_list .game .update .edit {
+    width: 100%;
+    background-color: var(--tertiary-color);
+    color: var(--font-color);
+    border: none;
+    padding: 5px;
+}
+
+.game_list .game .update .edit:hover {
+    cursor: pointer;
+}
+
+.game_list .game .update .delete {
+    width: 100%;
+    background-color: var(--attention-color);
+    color: var(--font-color);
+    border: none;
+    padding: 5px;
+}
+
+.game_list .game .update .delete:hover {
+    cursor: pointer;
+}
+
+/* Adicionar novos jogos */
+
+.addgame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--font-color);
+    padding: 10px;
+}
+
+.addgame > .close {
+    align-self: flex-end;
+    width: 20px;
+    height: 20px;
+    color: var(--font-color);
+    text-align: center;
+}
+
+.addgame > .close:hover {
+    cursor: pointer;
+}
+
+.addgame > .sections {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    gap: 10px 0;
+}
+
+.addgame > .sections > .input[type="file"] {
+    color: var(--font-color);
+}
+
+.addgame > .sections > .input[type="file"]::file-selector-button {
+    background-color: var(--tertiary-color);
+    border: none;
+    color: var(--font-color);
+    padding: 5px;
+}
+
+.addgame > .sections > .input[type="file"]::file-selector-button:hover {
+    cursor: pointer;
+}
+
+.addgame > .sections > .text {
+    color: var(--font-color);
+}
+
+.addgame > .sections > .text > .required {
+    color: var(--attention-color);
+}
+
+.addgame > .add {
+    background-color: var(--tertiary-color);
+    border: none;
+    padding: 5px;
+    color: var(--font-color);
+}
+
+.addgame > .add:hover {
+    cursor: pointer;
+}
