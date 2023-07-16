@@ -32,6 +32,6 @@ Bibliotecas (Node 16.6.0 - Windows)
 <details>
 <summary>Aplicação (Video)</summary>
 
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 71.611%;"><iframe src="https://streamable.com/e/oe34fs?quality=highest" frameborder="0" width="100%" height="100%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+https://streamable.com/e/oe34fs?quality=highest
 
 </details>
