@@ -21,6 +21,9 @@ py main.py
 Bibliotecas (Python 3.10 - Windows)
 - pytube (15.0.0 - Existem bugs)
 
+Dependências
+- ffmpeg ([download](https://ffmpeg.org/download.html) - converter para mp3)
+
 ### Demonstração
 
 <details>
@@ -38,9 +41,11 @@ Baixando playlist
 <summary>Resolver Bug</summary>
 
 Erro no arquivo "packages/pytube/cipher.py" na função "get_transform_object"
+
 ![demo](./github/pytube/erro.png)
 
 Solução (substituir o valor de retorno)
+
 ![demo](./github/pytube/solucao.png)
 
 </details>
