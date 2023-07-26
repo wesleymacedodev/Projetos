@@ -2,7 +2,7 @@
 
 ### Descrição
 
-Projeto com intuito de colocar em pratica a utilização de componentes e a criação de um site fictício para uma empresa de aplicativo de música, além de por em pratica a utilização do react. 
+Projeto com o intuito de colocar em prática a utilização de componentes e a criação de um site fictício para uma empresa de aplicativo de música, além de pôr em prática a utilização do React.
 
 ### Instalação
 
