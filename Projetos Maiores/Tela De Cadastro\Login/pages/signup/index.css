@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background-color_1: #3a6eb3;
+    --background-color_2: #B0D7FF;
+    --font-color: #EAE8FF;
+    --form-color: #424d6180;
+    --form-link: #91b7d6;
+    --form-invalid: #be3b3b;
+}
+
+.register-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg,var(--background-color_1),var(--background-color_2));
+    overflow: hidden;
+}
+
+.register-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--form-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.register-title {
+    font-size: 1.7rem;
+    color: var(--font-color);
+}
+
+.line {
+    color: var(--font-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-top: 10px;
+    min-width: 200px;
+}
+
+.form-terms {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.terms {
+    margin-left: 5px;
+    color: var(--font-color);
+    font-size: 0.7rem;
+}
+
+
+
+.form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--font-color);
+    color: var(--font-color);
+    outline: none;
+    padding: 5px;
+}
+
+.form-password-hide {
+    position: absolute;
+    right: 0;
+    margin-top: 4px;
+    cursor: pointer;
+    color: var(--font-color);
+}
+
+.form-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: all .3s;
+    color: var(--font-color);
+}
+
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label{
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-top: -5px;
+}
+
+.form-submit {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    padding: 5px;
+    transition: filter 0.3s;
+}
+
+.form-submit:hover {
+    filter: brightness(0.7);
+}
+
+.form-invalid {
+    border-color: var(--form-invalid);
+}
+
+.form-invalid-text {
+    font-size: .7rem;
+    color: var(--form-invalid);
+}
+
+.form-submit:hover {
+    cursor: pointer;
+}
+
+.form-register {
+    margin-top: 5px;
+    font-size: .8rem;
+    color: var(--font-color);
+    align-self: center;
+}
+
+.form-register-link {
+    text-decoration: none;
+    color: var(--form-link);
+}
