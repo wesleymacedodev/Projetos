@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #393053;
+    --button-color: #443C68;
+    --text-color: #9182c0;
+    --text-2-color: #635985;
+    --text-3-color: #ffffff;
+    --hover-color: #262138;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.title {
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+#color-box {
+    position: relative;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    transition: transform .5s;
+}
+
+#color-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#color-box:hover::before {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%);
+    background-color: var(--hover-color);
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    content: attr(value);
+    font-size: .5rem;
+    color: var(--text-3-color);
+}
+
+#color-text {
+    color: var(--text-color);
+}
+
+#selector {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    width: 100%;
+    padding: 5px;
+    transition: filter .5s
+}
+
+#selector:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.current-color {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#history-color {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}

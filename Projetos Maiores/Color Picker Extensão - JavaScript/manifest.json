@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Color Picker",
+    "description": "Extensão para coletar as cores de uma pagina",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Clique para abrir o menu!"
+    },
+    "icons" : {
+        "32": "./logo.png"
+    }
+}
