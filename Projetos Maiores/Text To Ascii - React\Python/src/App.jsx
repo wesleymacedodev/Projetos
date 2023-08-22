@@ -19,7 +19,7 @@ function App() {
   const asciiTextRef = useRef();
 
   useEffect(() => {
-    fetch("http://192.168.10.101:3333/text/fonts", { method: "GET" })
+    fetch("http://localhost:3333/text/fonts", { method: "GET" })
       .then((data) => data.json())
       .then((data) => setFonts(data))
       .catch((err) => console.error(err));
@@ -27,7 +27,7 @@ function App() {
 
   function Generator(event) {
     event.preventDefault();
-    fetch("http://192.168.10.101:3333/text", {
+    fetch("http://localhost:3333/text", {
       method: "POST",
       headers: {
         Accept: 
