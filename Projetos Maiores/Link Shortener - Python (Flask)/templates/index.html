@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link shortener</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <script>
+    const copy = (content) => {
+      let tempElem = document.createElement("textarea")
+      tempElem.value = "{{urlShort}}";
+      document.body.append(tempElem);
+      tempElem.select()
+      document.execCommand("copy")
+      tempElem.remove()
+    }
+  </script>
+</head>
+
+<body>
+  <main class="link_shortener">
+    <div class="box">
+      <h1 class="title">
+        <a class="link" href="{{request.url_root}}">Url shortener</a>
+      </h1>
+      {% if (homePage) %}
+      <form autocomplete="off" action="{{url_for('home')}}" method="POST" class="form">
+        <input type="text" class="text_input" placeholder="Digite o link" name="link" required />
+        <button type="submit" class="button">Encurtar</button>
+      </form>
+      {% else %}
+      <div class="url_short">
+        <p class="link">{{urlShort}}</p>
+        <button onclick="copy()" class="button">Copiar</button>
+      </div>
+      {% endif %}
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Link shortener</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+  <main class="link_shortener">
+    <div class="box">
+      <h1 class="title">
+        <a class="link" href="{{ request.url_root }}"> Pagina não encontrada! </a>
+      </h1>
+    </div>
+  </main>
+</body>
+
+</html>
