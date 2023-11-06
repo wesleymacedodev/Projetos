@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.6/cropper.min.css">
+    <title>GIF</title>
+</head>
+<body class="Main">
+        <div class="Input">
+            <h1 class="Title">Simple GIF Editor {{name}}</h1>
+            <form action="/upload" method="post" class="Form" enctype="multipart/form-data">
+            <div class="File">
+                <input type="file" class="File" name="file" onchange="loadImage(this)">
+                <button type="submit" class="Button">Upload</button>
+            </div>
+                <img id="imageInput" src="" alt="gif adicionado">
+            <div class="Options">
+                <div>
+                    <label for="start_x" class="Name">START (X) : </label>
+                    <input id="start_x" name="start_x"/>
+                </div>
+                <div>
+                    <label for="end_x" class="Name">END (X) : </label>
+                    <input id="end_x" name="end_x"/>
+                </div>
+                <div>
+                    <label for="start_y" class="Name">START (Y) : </label>
+                    <input id="start_y" name="start_y"/>
+                </div>
+                <div>
+                    <label for="end_y"class="Name">END (Y) : </label>
+                    <input id="end_y" name="end_y"/>
+                </div>
+                <div>
+                    <span class="Name">Rotacionar</span>
+                    <input type="number" name="rotate" min="-180" max="180"/>
+                </div>
+                <div>
+                    <span class="Name">Redimensionar</span>
+                    <input type="number" name="resize"  min="1" max="99"/>
+                </div>
+                <div>
+                    <span class="Name">Reverse</span>
+                    <input type="checkbox" name="reverse" id="">
+                </div>
+                <div>
+                    <span class="Name">Recortar</span>
+                    <input type="checkbox" name="crop" id="">
+                </div>
+                <div>
+                    <span class="Name">Blur</span>
+                    <input type="number" name="blur" id="blur">
+                </div>
+                <div>
+                    <span class="Name">Filtro</span>
+                    <select name="filter" id="">
+                        <option value="none" selected>Nenhum</option>
+                        <option value="grayscale">Cinza</option>
+                        <option value="invert">Negativo</option>
+                    </select>
+                </div>
+            </div>
+            </form>
+
+
+            <div>
+
+
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.6/cropper.min.js"></script>
+        <script>
+            const imageInput = document.getElementById("imageInput")
+            const loadImage = e => {
+                imageInput.src = window.URL.createObjectURL(e.files[0])
+                imageInput.style.display = "block"
+                const Croper = new Cropper(imageInput, {                
+                viewMode: 2,
+                scalable: true,
+                movable: true,
+                zoomable: true,
+                rotatable: true,
+                cropBoxResizable: true,
+                cropBoxMovable: true,
+                checkOrientation: false,
+                crop(event) {
+                    let start_x = Math.round(event.detail.x)
+                    let start_y = Math.round(event.detail.y)
+                    let end_x = Math.round(event.detail.x + event.detail.width)
+                    let end_y = Math.round(event.detail.y + event.detail.height)
+                    document.getElementById("start_x").textContent = `Start X : ${start_x}`
+                    document.getElementById("start_y").textContent = `Start Y : ${start_y}`
+                    document.getElementById("end_x").textContent = `End X : ${end_x}`
+                    document.getElementById("end_y").textContent = `End Y : ${end_y}`
+                    document.getElementById("start_x").value = start_x
+                    document.getElementById("start_y").value = start_y
+                    document.getElementById("end_x").value = end_x
+                    document.getElementById("end_y").value = end_y
+                }})
+            }
+        </script>
+
+</body>
+</html>
