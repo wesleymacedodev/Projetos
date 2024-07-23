@@ -1,0 +1,6 @@
+
+pyqrcode
+flask
+flask_cors
+pyzbar
+opencv-python

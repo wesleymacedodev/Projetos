@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QrCode - Wesley Macedo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="qrcodeTitle">QrCode</h1>
+    <div class="qrcodeBox">
+        <div class="qrcodeOptions">
+            <button class="qrcodeOptionsButton" id="createOption">Criar</button>
+            <button class="qrcodeOptionsButton" id="readerOption">Ler</button>
+        </div>
+        <form class="qrcodeCreate" id="qrcodeCreate" method="get">
+            <div class="qrcodeInfo">
+                <input type="text" class="qrcodeInput" id="qrcodeText" placeholder="Adicione o texto...">
+                <button type="submit" class="qrcodeButton">Criar</button>
+            </div>
+            <img src="" id="qrcodeImageSrc">
+        </form>
+        <form class="qrcodeReader" id="qrcodeReader" method="post">
+            <div class="qrcodeInfo">
+                <input type="file" name="text" class="qrcodeInput" id="qrcodeImage">
+                <button type="submit" class="qrcodeButton">Ler</button>
+            </div>
+            <span class="qrcodeTextOutput" id="qrcodeTextOutput"></span>
+        </form>
+    </div>
+</body>
+</html>

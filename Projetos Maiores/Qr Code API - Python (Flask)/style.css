@@ -1,0 +1,98 @@
+:root {
+    --color-1: #040D12;
+    --color-2: #183D3D;
+    --color-3: #5C8374;
+    --color-4: #93B1A6;
+    --color-5: #3e584e;
+
+    --font-1: 1.5rem; 
+    --font-2: 1.25rem;
+    --font-3: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--color-1);
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcodeBox {
+    background-color: var(--color-2);
+    
+}
+
+.qrcodeTitle {
+    color: var(--color-4);
+    margin-bottom: 10px;
+}
+
+.qrcodeOptions {
+    display: flex;
+}
+
+.qrcodeOptionsButton {
+    width: 100%;
+    background-color: var(--color-3);
+    border: none;
+    font-size: var(--font-3);
+    color: var(--color-4);
+    padding: 5px;
+    transition: background-color .5s ease-in-out;
+    cursor: pointer;
+}
+
+.qrcodeOptionsSelected {
+    background-color: var(--color-5);
+} 
+
+.qrcodeInfo {
+    display: flex;
+    padding: 10px;
+    min-width: 300px
+}
+
+.qrcodeInput {
+    width: 100%;
+    background-color: var(--color-3);
+    border: none;
+    padding: 5px;
+    color: var(--color-4);
+}
+
+.qrcodeInput::placeholder {
+    color: var(--color-4);
+}
+
+.qrcodeButton {
+    background-color: var(--color-3);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: var(--color-4);
+    width: 100%;
+}
+
+.qrcodeReader, .qrcodeCreate {
+    display: none;
+    flex-direction: column;
+}
+
+.qrcodeTextOutput {
+    padding: 10px;
+    color: var(--color-4);
+    max-width: 350px;
+    overflow-wrap: break-word;
+}
