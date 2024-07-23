@@ -1,4 +1,4 @@
-# File Uploader Website - Flask
+# Qr Code API - Python (Flask)
 
 ### Descrição
 
