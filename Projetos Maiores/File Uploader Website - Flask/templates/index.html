@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="uploadHome">
+        <div class="uploadBox">
+            <img src="{{url_for('static',filename='images/logo.svg')}}" alt="logo imagem" class="logo">
+            <h1 class="title">Cloud Upload</h1>
+            <form action="{{ url_for('home') }}" method="post" class="uploadForm" enctype="multipart/form-data"> 
+                <span class="text" id="fileName"></span>
+                <div class="uploadItem">
+                    <label for="file" class="uploadInput buttonHover">Upload Arquivo</label>
+                    <input type="file" id="file" name="file" required>
+                </div>
+                <button class="uploadButton buttonHover" id="uploadButton">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="uploadFiles">
+        {% for arquivo in arquivos %}
+        <form action="{{ url_for('home') }}" method="post" >
+            <div class="fileBox">   
+            <img src="{{ url_for('static', filename='images/' + arquivo[1]) }}" alt="file image" class="fileImage">
+            <span class="fileName">{{arquivo[0]}}</span>
+            <div class="fileButtons">
+                <button class="fileButton buttonHover" name="download" value="{{arquivo[0]}}">Baixar</button>
+                <button class="fileButton buttonDelete buttonHover" name="remove" value="{{arquivo[0]}}">Deletar</button>
+            </div>
+        </div>
+        </form>
+        {% endfor %}
+
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+:root {
+    --color-1: #27005D;
+    --color-2: #400099;
+    --color-3: #AED2FF;
+    --color-4: #E4F1FF; 
+    --color-5: #ee4e4e;
+    --fontsize-1: 1.5rem;
+    --fontsize-2: 1.2rem;
+    --fontsize-3: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--color-1);
+}
+
+.uploadHome {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+.uploadBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.title {
+    color: var(--color-4);
+    font-size: var(--fontsize-1);
+}
+
+.text {
+    color: var(--color-4);
+    font-size: var(--fontsize-3);
+}
+
+.logo {
+    width: 128px;
+}
+
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 50px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.uploadItem {
+    width: 100%;
+    position: relative;
+}
+
+.uploadInput {
+    display: block;
+    width: 100%;
+    color: var(--color-3);
+    border: 1px dashed var(--color-3);
+    padding: 10px 20px;
+    font-size: var(--fontsize-2);
+    
+}
+
+#file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.uploadButton {
+    font-size: var(--fontsize-2);
+    border: none;
+    background-color: var(--color-3);
+    color: var(--color-4);
+    padding: 10px 20px;
+} 
+
+/* Arquivos */
+
+.uploadFiles {
+    display: grid;
+    justify-items: center;
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.fileBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+    max-width: 200px;
+    gap: 10px;
+    background-color: var(--color-2);
+    padding: 10px;
+    height: 100%;
+}
+
+.fileName {
+    color: var(--color-4);
+    font-size: var(--fontsize-3);
+    line-break: anywhere;
+}
+
+.fileButtons {
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+}
+
+.fileImage {
+    max-width: 100%;
+}
+
+.fileButton {
+    width: 100%;
+    background-color: var(--color-3);
+    border: none;
+    padding: 5px 10px;
+}
+
+.buttonDelete {
+    background-color: var(--color-5);
+}
+
+/* Hover */
+
+.buttonHover {
+    transition: filter .5s ease-in-out;
+    cursor: pointer;
+}
+
+.buttonHover:hover {
+    filter: brightness(0.7);
+}
