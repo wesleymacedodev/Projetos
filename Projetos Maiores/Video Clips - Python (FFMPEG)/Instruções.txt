@@ -1,0 +1,12 @@
+Instalar
+
+FFMPEG
+
+Criar atalho
+
+1 - Win + R
+2 - Regedit
+3 - Navegar para o registro (HKEY_CLASSES_ROOT\*\shell)
+4 - Criar uma nova chave "nome_do_atalho"
+5 - Criar uma outra nova chave "command" 
+6 - Na chave command, adicione o valor ("diretorio_do_shell_script\run.bat" "%1")
